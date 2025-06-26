@@ -50,8 +50,8 @@ SELECT statements have the same number of columns, with compatible data types.*/
 		INTERSECT
 		select * from Eastor
 
-
-		--4. EXCEPT:- T1- T2 minus the common row in other table... 
+		--4. EXCEPT:- T1- T2 minus the common row in other table... (In SQL, the EXCEPT keyword is used to return rows from the first query that are not present in the second query — similar to set subtraction.
+)
 		select * from Westor     
 		EXCEPT
 		select * from Eastor
@@ -64,7 +64,7 @@ SELECT statements have the same number of columns, with compatible data types.*/
 		(select * from Westor      
 		EXCEPT
 		select * from Eastor)
-		union all                   -- all the unique value and re,oving the common row in both table
+		union all                   -- all the unique value and removing the common row in both table
 		(select * from Eastor    
 		EXCEPT
 		select * from Westor );
